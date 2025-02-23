@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+	<node pkg="decode_radars" name="radar_decoder" type="decode_node" output="screen" args="--mode cluster --id 2"/>
+
+	<node pkg="decode_radars" name="to_radar_pointcloud" type="pointcloud_node" output="screen"/>
+	
+
+</launch>
+
